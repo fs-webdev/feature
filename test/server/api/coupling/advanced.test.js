@@ -20,8 +20,8 @@ var supertest = require('supertest')
 var root = '../../../../'
   , mocks = require(root + 'test/mocks')
   , db = require(root + 'test/db')
-  , helpers = require(root + 'test/server/helpers')
-  , app = require(root + '/app');
+  , helpers = require('xpr-dash-mongodb').testHelpers
+  , app = require(root + '/lib/app');
 
 /**
  * Local vars
