@@ -1,0 +1,16 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:negotiator:20160616':
+    - simple-stack-common > connect > negotiator:
+        patched: '2016-12-13T20:47:19.329Z'
+    - simple-stack-common > express > connect > negotiator:
+        patched: '2016-12-13T20:47:19.329Z'
+  'npm:qs:20140806-1':
+    - simple-stack-common > express > connect > qs:
+        patched: '2016-12-13T20:47:19.329Z'
+    - simple-stack-common > connect > qs:
+        patched: '2016-12-13T20:47:19.329Z'
+  'npm:uglify-js:20151024':
+    - jade > transformers > uglify-js:
+        patched: '2016-12-13T20:47:19.329Z'

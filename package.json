@@ -5,21 +5,22 @@
   "main": "app.js",
   "author": "Dan Crews <crewsd@gmail.com>",
   "dependencies": {
-    "connect-redis": "^2.0.0",
+    "connect-redis": "^3.0.0",
     "debug": "^2.0.0",
-    "glob": "^4.0.3",
+    "glob": "^5.0.15",
     "jade": "^1.3.1",
-    "mongoose": "3.8.x",
+    "mongoose": "4.2.4",
     "node-uuid": "^1.4.1",
     "passport": "^0.2.0",
     "passport-github": "^0.1.5",
     "q": "^1.0.1",
     "redis": "^0.11.0",
     "simple-stack-common": "^0.2.3",
-    "stylus": "^0.47.1",
-    "superagent": "^0.18.1",
+    "stylus": "^0.54.3",
+    "superagent": "^0.21.0",
     "superagent-defaults": "^0.1.6",
-    "xpr-util-validation": "git+https://github.com/fs-webdev/xpr-util-validation.js.git#0.1.0"
+    "xpr-util-validation": "git+https://github.com/fs-webdev/xpr-util-validation.js.git#0.1.0",
+    "snyk": "^1.21.2"
   },
   "devDependencies": {
     "chai": "^1.9.2",
@@ -27,9 +28,12 @@
     "supertest": "^0.14.0"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha --reporter spec test/server/**/*"
+    "test": "NODE_ENV=test mocha --reporter spec test/server/**/*",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "5.x"
-  }
+  },
+  "snyk": true
 }
