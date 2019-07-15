@@ -1,3 +1,5 @@
+<a href="https://codeclimate.com/github/fs-webdev/feature/maintainability"><img src="https://api.codeclimate.com/v1/badges/24ed021ade4d723bf607/maintainability" /></a>
+
 [![XPRMNTL][logo-image]][logo-url]
 # XPRMNTL Dashboard.js
 [![Build Status][build-image]][build-url]
