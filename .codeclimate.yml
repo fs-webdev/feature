@@ -1,4 +1,18 @@
 version: "2"
+# This repo is a fork, we don't really want to change how it was written
+checks:
+  file-lines:
+    enabled: true
+    config:
+      threshold: 750
+  method-complexity:
+    enabled: true
+    config:
+      threshold: 10
+  method-lines:
+    enabled: true
+    config:
+      threshold: 75
 exclude_patterns:
   - ".*"
   - build/
