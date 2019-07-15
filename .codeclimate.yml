@@ -1,0 +1,14 @@
+version: "2"
+exclude_patterns:
+  - ".*"
+  - bower_components/
+  - build/
+  - dist/
+  - eslint-config-frontier-react.js
+  - eslint-config-tree.js
+  - node_modules/
+  - "**/*-polyfill.js"
+  - "**/*min.*"
+  - "**/reports/**/*"
+  - "**/vendor/**/*"
+  - "assets/vendors/**/*"
